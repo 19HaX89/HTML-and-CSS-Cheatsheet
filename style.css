@@ -61,8 +61,16 @@ table {
 #pagenav li{
     display: inline-block;
     width: 110px;
-    height: 40px;
+    height: 60px;
+    margin: 20px;
+    padding: 5px;
     cursor: pointer;
+    border: 1px solid blue;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+    box-shadow: 2px 5px;
+    background-color: midnightblue;
 }
 
 #pagenav h3{
@@ -80,14 +88,27 @@ table {
     border: 1px solid black;
 }
 
+#pagenav li:hover {
+    background-color: blue;
+}
+
+#pagenav li:active {
+    background-color: blue;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 0;
+}
+
 li a:link {
-    color: darkorange;
+    color: gold;
+    text-decoration: none;
 }
 
 li a:visited {
     color: gold;
+    text-decoration: none;
 }
 
 li a:hover {
-    color: blue;
+    background-color: blue;
 }
