@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML and CSS Cheatsheet</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav id="pagenav">
+                <h3>Page Navigation (Scrollable)</h3>
+                <h3>HTML</h3>
+                <ul>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#basictags">Basic Tags</a></li>
+                    <li><a href="#bodyattr">Body Attributes</a></li>
+                    <li><a href="#texttags">Text Tags</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#graphics">Graphical Elements</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#tableattr">Table Attributes</a></li>
+                </ul>
+                <h3>CSS</h3>
+                <ul>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#font">Font Properties</a></li>
+                    <li><a href="#color&background">Color & Background</a></li>
+                    <li><a href="#text">Text Properties</a></li>
+                    <li><a href="#classification">Classification Properties</a></li>
+                    <li><a href="#box">Box Properties</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            <div id="name">
+                <h1>HTML and CSS Cheatsheet</h1>
+            </div>
+            <div id="html">
+                <h2><a name="html">HTML</h2>
+                <div class="section">
+                    <h3 id="basictags"><a name="basictags">Basic tags</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">&lt;html&gt; &lt;/html&gt;</td>
+                                <td>HyperTextMarkupLink</td>
+                                <td>Creates an HTML document</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;head&gt; &lt;/head&gt;</td>
+                                <td>Head</td>
+                                <td>Sets off the title and other info that isn't displayed</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;body&gt; &lt;/body&gt;</td>
+                                <td>Body</td>
+                                <td>Sets of the visible area of the document</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;title&gt; &lt;/title&gt;</td>
+                                <td>Title</td>
+                                <td>Puts the name of the document in the Title bar and is the name that gets bookmarked</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <table>
+                        <h3 id="bodyattr"><a name="bodyattr">Body Attributes(only used in email newsletters)</h3>
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">bgcolor=?</td>
+                                <td>Background Color</td>
+                                <td>Changes the background color of the element using a color name or hex value</td>
+                            </tr>
+                            <tr>
+                                <td class="code">text=?</td>
+                                <td>Text color</td>
+                                <td>Sets the text color using a color name or hex value</td>
+                            </tr>
+                            <tr>
+                                <td class="code">link=?</td>
+                                <td>Link color</td>
+                                <td>Sets the color of links using a color name or hex value</td>
+                            </tr>
+                            <tr>
+                                <td class="code">vlink=?</td>
+                                <td>Visited link color</td>
+                                <td>Sets the color of visited links using a color name or hex value</td>
+                            </tr>
+                            <tr>
+                                <td class="code">alink=?</td>
+                                <td>Active link color</td>
+                                <td>Sets the color of active links using a color name or hex value</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h3 id="texttags"><a name="texttags">Text Tags</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">&lt;pre&gt; &lt;/pre&gt;</td>
+                                <td>Preformatted</td>
+                                <td>Creates preformatted text</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;h1&gt; &lt;/h1&gt; ---> &lt;h6&gt; &lt;/h6&gt;</td>
+                                <td>Headlines</td>
+                                <td>Creates headlines where h1 is the biggest and h6 is the smallest</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;b&gt; &lt;/b&gt;</td>
+                                <td>Bold</td>
+                                <td>Creates bold text(Should use &lt;strong&gt; instead)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;i&gt; &lt;/i&gt;</td>
+                                <td>Italic</td>
+                                <td>Creates italicized text(Should use &lt;em&gt; instead)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;tt&gt; &lt;/tt&gt;</td>
+                                <td>Typewriter Text</td>
+                                <td>Creates typewriter style text</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;code&gt; &lt;/code&gt;</td>
+                                <td>Source code</td>
+                                <td>Defines source code, usually monospace</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;cite&gt; &lt;/cite&gt;</td>
+                                <td>Citation</td>
+                                <td>Creates a citation, usually in italics</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;address&gt; &lt;/address&gt;</td>
+                                <td>Address</td>
+                                <td>Creates address section, usually in italics</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;em&gt; &lt;/em&gt;</td>
+                                <td>Emphasize</td>
+                                <td>Emphasizes a word, usually in italics</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;strong&gt; &lt;/strong&gt;</td>
+                                <td>Strong</td>
+                                <td>Emphasizes a word, usually in bold</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;font size=?&gt; &lt;/font&gt;</td>
+                                <td>Font Size</td>
+                                <td>Sets the font size from 1 to 7(Should use css instead)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;font color=?&gt; &lt;/font&gt;</td>
+                                <td>Font Color</td>
+                                <td>Sets the font color(Should use css instead)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;font face=?&gt; &lt;/font&gt;</td>
+                                <td>Font Face</td>
+                                <td>Defines the font face(Should use css instead)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h3 id="links"><a name="links">Links</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">&lt;a href="url"&gt;clickable text &lt;/a&gt;</td>
+                                <td>Hyperlink</td>
+                                <td>Creates a hyperlink to the Uniform Resource Locator(url)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;a href="mailto:EMAIL_ADDRESS"&gt;clickable text &lt;/a&gt;</td>
+                                <td>Hyperlink</td>
+                                <td>Creates a hyperlink to an email address</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt; name="NAME"&gt;</td>
+                                <td>Target location</td>
+                                <td>Creates a target location in the document</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt; href="#NAME"&gt; &lt;/a&gt;</td>
+                                <td>Jump to location</td>
+                                <td>Creates a link to the target location</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h3 id="lists"><a name="lists">Lists</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">&lt;ul&gt; &lt;/ul&gt;</td>
+                                <td>Unordered List</td>
+                                <td>Creates an unordered list</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;ol start=?&gt; &lt;/ol&gt;</td>
+                                <td>Ordered List</td>
+                                <td>Creates an ordered list that starts at the "start=?" number</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;li&gt; &lt;/li&gt;</td>
+                                <td>List Item</td>
+                                <td>Creates a list item in the list</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;dl&gt; &lt;/dl&gt;</td>
+                                <td>Definition List</td>
+                                <td>Creates a definition list</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;dt&gt;</td>
+                                <td>Definition Term</td>
+                                <td>Precedes each defintion</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;dd&gt;</td>
+                                <td>Definition Data</td>
+                                <td>Precedes each definition</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h3 id="graphics"><a name="graphics">Graphical elements</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">&lt;hr&gt;</td>
+                                <td>Horizontal Rule</td>
+                                <td>Inserts a horizontal rule</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;hr size=?&gt;</td>
+                                <td>Horizontal Rule Size</td>
+                                <td>Sets size(height) of horizontal rule</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;hr width=?&gt;</td>
+                                <td>Horizontal Rule Width</td>
+                                <td>Sets width of rule(as a % of pixel length)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;hr noshade&gt;</td>
+                                <td>Horizontal Rule No Shade</td>
+                                <td>Creates a horizontal rule with no shadow</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;img src="url"&gt;</td>
+                                <td>Image</td>
+                                <td>Adds a image from the url</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;img src="url" align=?&gt;</td>
+                                <td>Image Align</td>
+                                <td>Aligns image(Use css instead)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;img src="url" border=?&gt;</td>
+                                <td>Image Border</td>
+                                <td>Sets size of border around the image(Use css instead)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;img src="url" height=?&gt;</td>
+                                <td>Image Height</td>
+                                <td>Sets height of image in pixels</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;img src="url" width=?&gt;</td>
+                                <td>Image Width</td>
+                                <td>Sets the width of image in pixels</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;img src="url" alt=?&gt;</td>
+                                <td>Image Alternate</td>
+                                <td>Sets the alternate text for browsers that can't process images(required by the ADA)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h3 id="tables"><a name="tables">Tables</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">&lt;table&gt; &lt;/table&gt;</td>
+                                <td>Table</td>
+                                <td>Creates a table</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;tr&gt; &lt;/tr&gt;</td>
+                                <td>Table Row</td>
+                                <td>Sets of each row in a table</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;td&gt; &lt;/td&gt;</td>
+                                <td>Table Data</td>
+                                <td>Sets of each cell in a row</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;th&gt; &lt;/th&gt;</td>
+                                <td>Table Header</td>
+                                <td>Sets off the table header(A normal cell with bold text)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h3 id="tableattr"><a name="tableattr">Table Attributes(Only used for email newsletters)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">&lt;table border=?&gt;</td>
+                                <td>Table Border</td>
+                                <td>Sets width of the table borders</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;table cellspacing=?&gt;</td>
+                                <td>Table Cellspacing</td>
+                                <td>Sets amount of space between table cells</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;table cellpadding=?&gt;</td>
+                                <td>Table Cellpadding</td>
+                                <td>Sets amount of space between a cell's border and it's contents</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;table width=?&gt;</td>
+                                <td>Table Width</td>
+                                <td>Sets the width of the table in pixels or as a percentage</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;tr align=?&gt;</td>
+                                <td>Table Row Align</td>
+                                <td>Sets the alignment for cells within the row</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;td align=?&gt;</td>
+                                <td>Table Data Align</td>
+                                <td>Sets the align for cells(left/center/right)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;tr valign=?&gt;</td>
+                                <td>Table Row Vertical Align</td>
+                                <td>Sets the vertical alignment for cells within the row</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;td valign=?&gt;</td>
+                                <td>Table Data Vertical Align</td>
+                                <td>Sets the vertical alignment for cells(top/middle/bottom)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;td rowspan=?&gt;</td>
+                                <td>Table Data Rowspan</td>
+                                <td>Sets the number of rows a cell should span(default=1)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;td colspan=?&gt;</td>
+                                <td>Table Data Column Span</td>
+                                <td>Sets the number of columns a cell should span</td>
+                            </tr>
+                            <tr>
+                                <td class="code">&lt;td nowrap&gt;</td>
+                                <td>Table Data No Wrap</td>
+                                <td>Prevents lines within a cell from being broken to fit</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="css">
+                <h2>CSS</h2>
+                <div class="section">
+                    <h3 id="font"><a name="font">Font Properties</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">Font-Family</td>
+                                <td>Changes the font family of the selected element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Font-Style</td>
+                                <td>Changes text(Normal/oblique/italics) of the selected element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Font-variant</td>
+                                <td>Used to display font in normal or small caps of the selected element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Font-Weight</td>
+                                <td>Used to specify the weight of the font(Bold, normal, etc.) of the selected element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Font-Size</td>
+                                <td>Used to modify the size of the displayed font of the selected element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Font</td>
+                                <td>Used to combine all properties of fonts of selected element, eg.: p{font: italic bold 12pt/14pt Times, serif;}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h3 id="color&background"><a name="color&background">Color and Background Properties</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">Color</td>
+                                <td>Changes the color of the text of the selected element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Background-Color</td>
+                                <td>Sets the background color of the selected element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Background-Image</td>
+                                <td>Sets the background image of an element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Background-Repeat</td>
+                                <td>Determines how a specified background image is repeated</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Background-Attachment</td>
+                                <td>Determines if a specified background image will scroll with the content or be fixed with regard to the canvas</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Background</td>
+                                <td>Used to combine all properties of the background, eg.: body{background: red url(leaves.jpg) no-repeat bottom right;}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h3 id="text"><a name="text">Text Properties</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">Word-Spacing</td>
+                                <td>Defines an additional amount of space between words</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Letter-Spacing</td>
+                                <td>Defines an additional amount of space between characters</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Text-Decoration</td>
+                                <td>Allows text to be decorated through one of five properties(underline/overline/line-through/blink/none)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Vertical-Align</td>
+                                <td>Used to alter the vertical positioning of an inline element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Text-Transform</td>
+                                <td>Allows for capitalizing or decapitalizing of letters</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Text-Align</td>
+                                <td>Used to justify text left, center, right and justify</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Text-Indent</td>
+                                <td>Used to specify the amount of indentation prior to the first line of text</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Line-Height</td>
+                                <td>Used to control the spacing between baselines of text</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h3 id="classification"><a name="classification">Classification Properties</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">List-Style-Type</td>
+                                <td>Specifies the type of list-item marker, and is used if list-style-image is none or if image loading is turned off</td>
+                            </tr>
+                            <tr>
+                                <td class="code">List-Style-Image</td>
+                                <td>Specifies the image that will be used as list-item marker when image loading is turned on, replacing the marker specified in the list-style-type property</td>
+                            </tr>
+                            <tr>
+                                <td class="code">List-Style_Position</td>
+                                <td>Determines where the marker is placed in regard to the list item</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h3 id="box"><a name="box">Box Properties</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="code">Margin</td>
+                                <td>Sets the margins of an element by specifying the length or percentage</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Padding</td>
+                                <td>Sets the amount of space between the borders and the content of the selector</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Border-Width</td>
+                                <td>Sets the width of the element's border</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Border-Color</td>
+                                <td>Sets the color of the border of the element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Border-Style</td>
+                                <td>Sets the style of the border of the element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Border</td>
+                                <td>Sets the width, style and color of the border of the element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Width</td>
+                                <td>Sets the width of the element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Height</td>
+                                <td>Sets the height of the element</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Float</td>
+                                <td>Allows text to wrap around an element(left/right/none)</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Clear</td>
+                                <td>Specifies whether an element allows floating elements to its sides</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Top</td>
+                                <td>Moves the element the specified distance from the top of the original position</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Bottom</td>
+                                <td>Moves the element the specified distance from the bottom of the original position</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Left</td>
+                                <td>Moves the element the specified distance from the left of the original position</td>
+                            </tr>
+                            <tr>
+                                <td class="code">Right</td>
+                                <td>Moves the element the specified distance from the right of the original position</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
