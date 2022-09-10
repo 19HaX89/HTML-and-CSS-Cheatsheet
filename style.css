@@ -23,6 +23,10 @@ table {
     border: 2px solid black;
 }
 
+a {
+    cursor: pointer;
+}
+
 .section {
     border: 2px solid black;
     width: 900px;
@@ -85,4 +89,8 @@ a:link {
 
 a:visited {
     color: gold;
+}
+
+a:hover {
+    color: blue;
 }
